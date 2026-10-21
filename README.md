@@ -1,4 +1,12 @@
-# Windroida v1.6
+# Windora Messenger v2.5
+
+[![Android Release](https://img.shields.io/github/v/release/emad1381/windora-messanger?label=Android%20APK&logo=android)](https://github.com/emad1381/windora-messanger/releases/latest)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/emad1381/windora-messanger/android.yml?branch=main&label=Build%20APK)](https://github.com/emad1381/windora-messanger/actions)
+
+### 📲 دانلود آخرین نسخه اندروید (Android APK)
+همیشه آخرین نسخه کامپایل‌شده اپلیکیشن اندروید را می‌توانید از لینک زیر دریافت کنید:
+- 📥 **[دانلود مستقیم Windora-Messenger.apk](https://github.com/emad1381/windora-messanger/releases/download/latest/Windora-Messenger.apk)**
+- 📦 **[مشاهده صفحه آخرین نسخه در گیت‌هاب (Releases)](https://github.com/emad1381/windora-messanger/releases/latest)**
 
 پیام‌رسان تلگرام‌مانند، فقط با پایتون. سرور + رابط وب (برای خودت و دوستات) + دیتاشیت مدیریت (دسکتاپ، فقط برای تو).
 
