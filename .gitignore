@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local runtime data and secrets
+data/
+*.db
+*.db-shm
+*.db-wal
+*.log
+*.key
+*.crt
+*.pem
+
+# Configuration & local runtime scripts
+client_config.json
+service-run.bat
+wheels/
+
+# Android build outputs & local caches
+.gradle/
+build/
+android/.gradle/
+android/build/
+android/app/build/
+local.properties
+*.apk
+*.aab
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3390ec">
+<title>Windroida</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/png" href="/static/favicon.png">
+<link rel="apple-touch-icon" href="/static/icon-192.png">
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<div id="auth" hidden><div class="card">
+  <div class="logo"><img src="/static/logo.png" alt="Windroida" width="96" height="96"></div>
+  <h1>Windroida</h1><div class="sub">پیام‌رسان خصوصی</div>
+  <div class="tabs"><button id="tab-login">ورود</button><button id="tab-register">ثبت‌نام</button></div>
+  <form id="form" autocomplete="on" onsubmit="return false"></form>
+  <div id="amsg" class="msg"></div>
+  <button class="btn" id="abtn" type="button">ورود</button>
+</div></div>
+
+<div id="app" hidden>
+  <aside id="side">
+    <div class="sidehdr">
+      <button class="iconbtn" id="menu" title="منو"></button>
+      <div class="apptitle" id="apptitle">Windroida</div>
+      <label class="searchbox"><span id="sico"></span><input id="search" placeholder="جستجو" autocomplete="off"></label>
+      <button id="meav" title="پروفایل من"></button>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="mini" id="mini1" hidden></div>
+    <div id="list"></div>
+    <button id="fab" title="چت جدید"></button>
+    <nav id="bnav">
+      <button type="button" data-t="chats" class="on"><span class="bi"></span><b>چت‌ها</b></button>
+      <button type="button" data-t="contacts"><span class="bi"></span><b>مخاطبین</b></button>
+      <button type="button" data-t="settings"><span class="bi"></span><b>تنظیمات</b></button>
+      <button type="button" data-t="me"><span class="bi"></span><b>پروفایل</b></button>
+    </nav>
+  </aside>
+  <section id="main">
+    <div id="empty"><span>یک چت رو انتخاب کن تا شروع کنی</span></div>
+    <div id="chatview" hidden style="display:flex;flex-direction:column;flex:1;min-height:0">
+      <div id="wall"></div><input type="file" id="wallfile" accept="image/*" hidden>
+      <div id="hdr">
+        <button class="iconbtn" id="back"></button><span id="bb" class="badge" hidden></span>
+        <div id="hav"></div>
+        <div class="hi"><div id="hname"></div><div id="hsub"></div></div>
+        <button class="iconbtn" id="callbtn" title="تماس صوتی"></button>
+        <button class="iconbtn" id="vcallbtn" title="تماس تصویری"></button>
+        <button class="iconbtn" id="hsearch" title="جستجو در چت"></button>
+        <button class="iconbtn" id="hmore" title="بیشتر"></button>
+      </div>
+      <div class="mini" id="mini2" hidden></div>
+      <div id="pinbar" hidden><div class="ln"></div><div style="min-width:0"><b>پیام سنجاق‌شده</b><span id="pintxt"></span></div></div>
+      <div id="schbar" hidden><input id="schq" placeholder="جستجو در پیام‌ها…" autocomplete="off"><span class="cnt" id="schcnt"></span><button class="iconbtn" id="schup"></button><button class="iconbtn" id="schdn"></button><button class="iconbtn" id="schx"></button></div>
+      <div id="msgwrap"><div id="msgs"></div><button id="down" hidden></button><div id="dropz" hidden>فایل رو اینجا رها کن</div></div>
+      <div id="bar" hidden><span id="bar-ic"></span><div class="ln"></div><div class="grow"><b id="bar-t"></b><span id="bar-x"></span></div><button class="iconbtn" id="bar-c"></button></div>
+      <div id="composer">
+        <div id="emoji" hidden></div>
+        <div class="cwrap">
+          <button class="iconbtn" id="attach" title="پیوست"></button>
+          <textarea id="input" rows="1" placeholder="پیام…" dir="auto"></textarea>
+          <button class="iconbtn" id="emo" title="اموجی"></button>
+        </div>
+        <button id="sendbtn"></button>
+        <input type="file" id="file" hidden multiple>
+        <div id="rec" hidden><span class="dot"></span><span class="t" id="rect">0:00</span><div class="lvl" id="lvl"></div><button class="cancel" id="reccancel">لغو</button></div>
+      </div>
+      <div id="ronly" class="blocked" hidden>📢 فقط مدیر می‌تونه تو این کانال پیام بذاره</div>
+    </div>
+  </section>
+</div>
+
+<div id="scrim"></div><aside id="drawer"></aside>
+<div id="ctx" hidden></div><div id="toast" hidden></div><div id="modal" hidden></div>
+<div id="netbar" hidden>ارتباط قطع شد؛ در حال اتصال دوباره…</div>
+<div id="callui" hidden></div><div id="lightbox" hidden></div><audio id="remote" autoplay playsinline></audio>
+<div id="splash"><img class="slogo" src="/static/logo.png" alt="" width="110" height="110"><div class="logo">Windroida</div><div>در حال اتصال…</div></div>
+<script src="/static/app.js"></script>
+<script src="/static/room.js"></script>
+</body>
+</html>
